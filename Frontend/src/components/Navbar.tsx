@@ -33,9 +33,9 @@ export default function Navbar() {
             {/* Home Button */}
             <Link
               to="/"
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
+              className={`px-3 py-2 rounded-md text-md font-medium ${
                 location.pathname === "/" ? "font-bold text-white" : "text-gray-300"
-              } hover:font-bold hover:text-white`}
+              }  hover:text-white`}
             >
               Home
             </Link>
@@ -44,9 +44,9 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={toggleDropdown}
-                className={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${
+                className={`px-3 py-2 rounded-md text-md font-medium flex items-center ${
                   dropdownOpen ? "font-bold text-white" : "text-gray-300"
-                } hover:font-bold hover:text-white`}
+                }  hover:text-white`}
               >
                 Our Products
                 <FaChevronDown className="ml-1" />
@@ -97,9 +97,9 @@ export default function Navbar() {
             {/* Support Button */}
             <Link
               to="/support"
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
+              className={`px-3 py-2 rounded-md text-md font-medium ${
                 location.pathname === "/support" ? "font-bold text-white" : "text-gray-300"
-              } hover:font-bold hover:text-white`}
+              }  hover:text-white`}
             >
               Support
             </Link>
